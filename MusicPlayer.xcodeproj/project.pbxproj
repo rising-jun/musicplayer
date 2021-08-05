@@ -81,12 +81,12 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		724052A126A171F50029DFA9 /* viewmodel */ = {
+		724052A126A171F50029DFA9 /* reactor */ = {
 			isa = PBXGroup;
 			children = (
 				72A76C8526A15C36002C38E7 /* MusicPlayReactor.swift */,
 			);
-			path = viewmodel;
+			path = reactor;
 			sourceTree = "<group>";
 		};
 		724052A226A172270029DFA9 /* model */ = {
@@ -141,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				724052A226A172270029DFA9 /* model */,
-				724052A126A171F50029DFA9 /* viewmodel */,
+				724052A126A171F50029DFA9 /* reactor */,
 				724052A026A171EC0029DFA9 /* view */,
 				72A76C7426A15ABA002C38E7 /* MusicPlayViewController.swift */,
 			);
@@ -408,7 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LHMNAPQ6N7;
+				DEVELOPMENT_TEAM = JTTXL4G6GA;
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -428,7 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LHMNAPQ6N7;
+				DEVELOPMENT_TEAM = JTTXL4G6GA;
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

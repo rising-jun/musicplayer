@@ -11,7 +11,8 @@ public struct MusicInfo: Codable {
     let singer: String
     let album: String
     let title: String
-    let duration: String
+    let duration: Int
+    let image: String
     let file: String
     let lyrics: String
     
