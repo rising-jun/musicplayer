@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 class MusicPlayView: BaseView{
-
+    
     lazy var musicTitle = UILabel()
     lazy var artistName = UILabel()
     lazy var albumIV = UIImageView()
@@ -21,10 +21,13 @@ class MusicPlayView: BaseView{
     lazy var rightTimer = UILabel()
     lazy var rewindbtn = UIButton()
     lazy var forwordBtn = UIButton()
+    lazy var playModeBtn = UIButton()
     
     override func setup() {
         backgroundColor = .white
-        addSubViews(musicTitle, artistName, albumIV, lyricsLabel, subLyricsLabel, seekBar, leftTimer, rightTimer, playBtn, rewindbtn, forwordBtn)
+        addSubViews(musicTitle, artistName, albumIV, lyricsLabel, subLyricsLabel, seekBar, leftTimer, rightTimer, playBtn, rewindbtn, forwordBtn, playModeBtn)
+        
+        seekBar.setThumbImage(UIImage(), for: .application)
         
         musicTitle.text = "music Title"
         musicTitle.adjustsFontSizeToFitWidth = true
@@ -126,9 +129,15 @@ class MusicPlayView: BaseView{
             make.leading.equalTo(playBtn.snp.trailing).offset(30)
         }
         
-        
+        playModeBtn.snp.makeConstraints { make in
+            make.top.equalTo(self).offset(50)
+            make.leading.equalTo(self).offset(20)
+            make.width.height.equalTo(30)
+        }
+        playModeBtn.backgroundColor = .brown
+    
     }
-    
-    
-    
+
+
+
 }
